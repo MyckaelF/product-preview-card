@@ -100,3 +100,33 @@ body {
 .description button:hover {
     background-color: hsl(158, 38%, 17%);;
 }
+
+@media (max-width: 375px) {
+    body {
+        height:100vh;
+    }
+    .containerElements {
+        height: 600px;
+        width: 345px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .img {
+        background-image: url(../images/image-product-mobile.jpg);
+        background-size: cover;
+        height: 35%;
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+    }
+    .description {
+        height: 65%;
+        width: 100%;
+    }
+    button {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .attribution {
+        text-align: center;
+    }
+}
