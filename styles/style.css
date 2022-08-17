@@ -1,0 +1,102 @@
+@import url(./variables.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--primary-colorCream);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: var(--neutral-grayvishBlue);
+}
+
+.containerElements {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 425px;
+    width: 550px;
+    border-radius: 10px;
+}
+
+.img {
+    background-image: url(../images/image-product-desktop.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    border-radius: 8px 0 0 8px;
+}
+
+.description {
+    padding: 28px;
+    width: 50%;
+    height: 100%;
+}
+
+.description h2, p, h1, .prices {
+    margin-bottom: 15px;
+}
+
+.description h2 {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.description h1 {
+    color: var(--neutral-darkBlue);
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+}
+
+.description p {
+    line-height: 22px;
+}
+
+.prices {
+    position: relative;
+}
+
+.prices span:first-child {
+    color: var(--primary-color);
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.prices span:last-child  {
+    text-decoration: line-through;
+    font-size: 12px;
+    position: absolute;
+    top: 30%;
+    right: 45px;
+}
+
+.description button {
+    background-color: var(--primary-color);
+    background-image: url(../images/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: 50px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    transition: all 500ms ease;
+}
+
+.description button:hover {
+    background-color: hsl(158, 38%, 17%);;
+}
